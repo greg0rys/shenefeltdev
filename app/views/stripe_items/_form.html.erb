@@ -1,0 +1,17 @@
+<%= form_with(model: stripe_item) do |form| %>
+  <% if stripe_item.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(stripe_item.errors.count, "error") %> prohibited this stripe_item from being saved:</h2>
+
+      <ul>
+        <% stripe_item.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

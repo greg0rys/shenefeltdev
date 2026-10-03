@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @stripe_customer %>
+
+<div>
+  <%= link_to "Edit this stripe customer", edit_stripe_customer_path(@stripe_customer) %> |
+  <%= link_to "Back to stripe customers", stripe_customers_path %>
+
+  <%= button_to "Destroy this stripe customer", @stripe_customer, method: :delete %>
+</div>

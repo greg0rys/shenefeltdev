@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Stripe items" %>
+
+<h1>Stripe items</h1>
+
+<div id="stripe_items">
+  <% @stripe_items.each do |stripe_item| %>
+    <%= render stripe_item %>
+    <p>
+      <%= link_to "Show this stripe item", stripe_item %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New stripe item", new_stripe_item_path %>

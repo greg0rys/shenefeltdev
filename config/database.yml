@@ -1,0 +1,28 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: <%= ENV.fetch("DB_URL", "127.0.0.1") %>
+  port: <%= ENV.fetch("DB_PORT", 5432) %>
+  username: <%= ENV.fetch("DB_USER") %>
+  password: <%= ENV.fetch("DB_PASS") %>
+  database: <%= ENV.fetch("DB_NAME") %>
+  schema_search_path: <%= ENV.fetch("DB_SCHEMA", "shenefeltdev_site") %>
+  sslmode: disable
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  database: postgres_test
+
+production:
+  primary:
+    <<: *default
+  cable:
+    <<: *default
+  cache:
+    <<: *default
+  queue:
+    <<: *default
+

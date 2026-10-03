@@ -1,0 +1,2 @@
+module StripePurchasesHelper
+end

@@ -1,0 +1,11 @@
+<% content_for :title, "New stripe purchase" %>
+
+<h1>New stripe purchase</h1>
+
+<%= render "form", stripe_purchase: @stripe_purchase %>
+
+<br>
+
+<div>
+  <%= link_to "Back to stripe purchases", stripe_purchases_path %>
+</div>

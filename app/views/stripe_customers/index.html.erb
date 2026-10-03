@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Stripe customers" %>
+
+<h1>Stripe customers</h1>
+
+<div id="stripe_customers">
+  <% @stripe_customers.each do |stripe_customer| %>
+    <%= render stripe_customer %>
+    <p>
+      <%= link_to "Show this stripe customer", stripe_customer %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New stripe customer", new_stripe_customer_path %>

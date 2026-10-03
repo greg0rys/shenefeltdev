@@ -1,0 +1,11 @@
+<% content_for :title, "New stripe item" %>
+
+<h1>New stripe item</h1>
+
+<%= render "form", stripe_item: @stripe_item %>
+
+<br>
+
+<div>
+  <%= link_to "Back to stripe items", stripe_items_path %>
+</div>

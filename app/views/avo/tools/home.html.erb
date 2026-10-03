@@ -1,0 +1,26 @@
+<div class="p-6 max-w-6xl mx-auto">
+  <!-- Welcome Banner -->
+  <div class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-lg p-6 shadow-md mb-8">
+    <h1 class="text-3xl font-bold mb-2">Welcome back,  👋</h1>
+    <p class="text-blue-100">Here is a quick overview of the platform's current status.</p>
+  </div>
+
+  <!-- Quick Action Cards Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+      <h3 class="font-semibold text-gray-800 text-lg mb-2">System Status</h3>
+      <p class="text-sm text-green-600 font-medium">● All systems operational</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+      <h3 class="font-semibold text-gray-800 text-lg mb-2">Pending Approvals</h3>
+      <p class="text-2xl font-bold text-gray-900"><%= @pending_count ||= 0 %></p>
+    </div>
+
+    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+      <h3 class="font-semibold text-gray-800 text-lg mb-2">Quick Links</h3>
+      <%= a_link_to "Manage Users", "/admin/resources/users", class: "text-indigo-600 hover:underline text-sm block mb-1" %>
+      <%= a_link_to "View System Logs", "/admin/tools/logs", class: "text-indigo-600 hover:underline text-sm block" %>
+    </div>
+  </div>
+</div>
