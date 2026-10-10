@@ -82,7 +82,7 @@ gem "pry", "~> 0.16.0"
 gem "pastel", "~> 0.8.0"
 gem "httparty", "~> 0.24.2"
 
-gem "stripe", "~> 19.6"
+gem "stripe", "~> 20.0"
 
 gem "sidekiq", "~> 8.1"
 
