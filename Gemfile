@@ -96,7 +96,7 @@ gem "vcr", "~> 6.4"
 
 gem "devise", "~> 5.0"
 
-gem "aws-sdk-s3", "~> 1.232"
+gem "aws-sdk-s3", "~> 1.233"
 
 
 
