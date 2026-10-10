@@ -102,7 +102,7 @@ gem "aws-sdk-s3", "~> 1.232"
 
 gem "dotenv-rails", "~> 3.2"
 
-gem "pg", "~> 1.6"
+gem "pg", "~> 1.7"
 
 gem "faker", "~> 3.8"
 
